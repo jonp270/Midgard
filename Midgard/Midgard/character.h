@@ -14,10 +14,19 @@
 class character {
 //Varables that only the character can change. so for instance (str) is not something a enemy needs to modify.
 private:
-
+	int str = 0;
+	int dex = 0;
+	int hp = 0;
+	int mp = 0;
+	int intelligence = 0;
+	int wis = 0;
+	int def = 0;
+	int res = 0;
 //Vars that everyone can see and change. This makes them easy to get to and to use for needed info. Health will most likely need to go here.
 // In addition this is also where we will put functions to access the private vars above but more on that later.
+//if the enemy can see it, it goes here
 public:
 
 };
+
 

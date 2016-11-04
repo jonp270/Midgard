@@ -32,5 +32,8 @@
     <ClInclude Include="saveFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="enemies.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
