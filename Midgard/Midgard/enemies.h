@@ -14,7 +14,7 @@ together, I just want you to do vars and functions. its alot for one hour so thi
 
 class enemy {
 	//Varables that only the character can change. so for instance (str) is not something a enemy needs to modify.
-private:
+protected:
 	int str = 0;
 	int dex = 0;
 	int hp = 0;

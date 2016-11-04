@@ -14,9 +14,28 @@ todo: create a char function, create first map, discuss tutorial or no tutorial,
 following is int main, this is where the code will always start, its a special function that tells the computer hey this is where your starting. everything we do comes out of there.
 */
 int main() {
-
+	// Justins todo* create a menu that has three options new game, continue, quit, and change while loop. make sure it runs. ask user for number, fix infinite loop
+	int number = 0;
 	cout << "hello World" << endl; // cout refers to write text to cmd. << refers to the output flow (<< = out, >> = in) "" anything inside quotation marks refers to a string or text like your reading. endl means to end the line and the next output should be put on the next line.
+	
+	cout << "welcome to midgard";
+	cout << "please pick a option" << endl;
 
+	// switch statement inside a do while loop.
+	do {
+		// menu options
+		cout << "menu options 1" << endl;
+
+		// user choice
+		switch (number) {
+		case 1:
+			cout << "you sected start new game but it doesnt exist yet" << endl;
+			break;
+		case 2: cout << "you picked continue but it doesnt exist yet" << endl;
+		}
+
+	} while (number != 5);
+		
 
 
 	system("pause"); // system is a function call to windows, pause refers to the command on cmd meaning to "pause" the current output. a cheap and easy way to see whats going on with code.
