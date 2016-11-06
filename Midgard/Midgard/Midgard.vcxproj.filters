@@ -24,6 +24,9 @@
     <ClCompile Include="saveFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="enemies.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="character.h">
