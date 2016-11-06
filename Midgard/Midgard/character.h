@@ -1,4 +1,5 @@
 #pragma once // auto included so that nothing every calls this in more than once (which would waste time)
+#include <string>
 /*
 	So header files are used to hold our own set of stuff. Were going to have a decent bit of code in this game so its nice
 	to split things apart. Header files are something i started to see in my cop2001 class and were actually going a step beyond that
@@ -14,6 +15,7 @@
 class character {
 //Varables that only the character can change. so for instance (str) is not something a enemy needs to modify.
 protected:
+	std::string name = " ";
 	int str = 0;
 	int dex = 0;
 	int hp = 0;
