@@ -19,22 +19,30 @@ int main() {
 	cout << "hello World" << endl; // cout refers to write text to cmd. << refers to the output flow (<< = out, >> = in) "" anything inside quotation marks refers to a string or text like your reading. endl means to end the line and the next output should be put on the next line.
 	
 	cout << "welcome to midgard";
-	cout << "please pick a option" << endl;
+	cout << "please pick an option" << endl;
 
 	// switch statement inside a do while loop.
 	do {
 		// menu options
 		cout << "menu options 1" << endl;
-
-		// user choice
+		cout << "menu options 2" << endl;
+		cout << "menu options 3" << endl;
+		cout << "to quit please press 0" << endl;
+		cin >> number;
+			// Train of thought: needs an input to change out of munu options 1.
+		// user choice^
 		switch (number) {
 		case 1:
 			cout << "you sected start new game but it doesnt exist yet" << endl;
 			break;
 		case 2: cout << "you picked continue but it doesnt exist yet" << endl;
+			break;
+		case 3: cout << "you picked Quit but it doesn't exist yet" << endl;
+			break;
+			
 		}
 
-	} while (number != 5);
+	} while (number != 0);
 		
 
 

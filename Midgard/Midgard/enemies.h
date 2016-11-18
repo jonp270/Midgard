@@ -1,4 +1,3 @@
-#pragma once
 #pragma once // auto included so that nothing every calls this in more than once (which would waste time)
 /*
 So header files are used to hold our own set of stuff. Were going to have a decent bit of code in this game so its nice

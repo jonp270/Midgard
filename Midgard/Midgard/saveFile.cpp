@@ -26,9 +26,9 @@ void save(character charSave) {
 	charFile.open("character.midgardsave");
 	if (charFile.is_open())
 	{
-		charFile << name << endl;
-		charFile << str << endl;
-		charFile << hp << endl;
+		charFile << name << std::endl;
+		charFile << str << std::endl;
+		charFile << hp << std::endl;
 		charFile.close();
 	}
 }
