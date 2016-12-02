@@ -23,16 +23,16 @@ mage::mage()
 	mp = 10;
 	intelligence = 12;
 	wis = 10;
-	def = 2;
+	def = 3;
 	res = 5;
 
 }
 
-theif::theif()
+thief::thief()
 {
 	str = 10;
 	dex = 12;
-	hp = 25;
+	hp = 15;
 	mp = 5;
 	intelligence = 8;
 	wis = 8;

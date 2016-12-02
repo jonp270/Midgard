@@ -114,12 +114,14 @@
     <ClCompile Include="Combat.cpp" />
     <ClCompile Include="enemies.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="map.cpp" />
     <ClCompile Include="saveFile.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="character.h" />
     <ClInclude Include="Comabt.h" />
     <ClInclude Include="enemies.h" />
+    <ClInclude Include="map.h" />
     <ClInclude Include="saveFile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
