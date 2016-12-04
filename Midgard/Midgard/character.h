@@ -25,6 +25,8 @@ public:
 	int def = 0;
 	int res = 0;
 	int position = 0;
+	int posX = 0;
+	int posY = 0;
 //Vars that everyone can see and change. This makes them easy to get to and to use for needed info. Health will most likely need to go here.
 // In addition this is also where we will put functions to access the private vars above but more on that later.
 //if the enemy can see it, it goes here
