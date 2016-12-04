@@ -44,10 +44,10 @@
     <ClInclude Include="enemies.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Comabt.h">
+    <ClInclude Include="map.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="map.h">
+    <ClInclude Include="Combat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

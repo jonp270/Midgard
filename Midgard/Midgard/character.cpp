@@ -2,7 +2,7 @@
 
 //functions def go below.
 
-fighter::fighter()
+fighter::fighter(std::string givenName)
 {
 	str = 12;
 	dex = 10;
@@ -12,10 +12,10 @@ fighter::fighter()
 	wis = 8;
 	def = 5;
 	res = 2;
-
+	setName(givenName);
 }
 
-mage::mage()
+mage::mage(std::string givenName)
 {
 	str = 8;
 	dex = 8;
@@ -25,10 +25,10 @@ mage::mage()
 	wis = 10;
 	def = 3;
 	res = 5;
-
+	setName(givenName);
 }
 
-thief::thief()
+thief::thief(std::string givenName)
 {
 	str = 10;
 	dex = 12;
@@ -38,4 +38,10 @@ thief::thief()
 	wis = 8;
 	def = 4;
 	res = 3;
+	setName(givenName);
+}
+
+void character::setName(std::string givenName)
+{
+	name = givenName;
 }
