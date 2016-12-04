@@ -12,6 +12,7 @@ fighter::fighter(std::string givenName)
 	wis = 8;
 	def = 5;
 	res = 2;
+	job = 1;
 	setName(givenName);
 }
 
@@ -25,6 +26,7 @@ mage::mage(std::string givenName)
 	wis = 10;
 	def = 3;
 	res = 5;
+	job = 2;
 	setName(givenName);
 }
 
@@ -38,6 +40,7 @@ thief::thief(std::string givenName)
 	wis = 8;
 	def = 4;
 	res = 3;
+	job = 3;
 	setName(givenName);
 }
 

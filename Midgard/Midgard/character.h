@@ -25,6 +25,7 @@ public:
 	int def = 0;
 	int res = 0;
 	int position = 0;
+	int job = 0; //for use in loading up the old save. this will allow us to know which class we selected. *used the FF key word because class is a keyword*
 	virtual void setName(std::string);
 //Vars that everyone can see and change. This makes them easy to get to and to use for needed info. Health will most likely need to go here.
 // In addition this is also where we will put functions to access the private vars above but more on that later.

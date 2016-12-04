@@ -1,3 +1,4 @@
-﻿  map.cpp
+﻿  Main.cpp
+c:\users\jonp\documents\midgard\midgard\midgard\main.cpp(97): warning C4101: 'choice': unreferenced local variable
   Midgard.vcxproj -> C:\Users\jonp\Documents\Midgard\Midgard\x64\Debug\Midgard.exe
   Midgard.vcxproj -> C:\Users\jonp\Documents\Midgard\Midgard\x64\Debug\Midgard.pdb (Partial PDB)

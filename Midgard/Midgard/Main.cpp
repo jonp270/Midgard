@@ -92,19 +92,27 @@ void startGame() {
 	}
 }
 
+void startGame(character bob)
+{
+	int choice;
+	map m(8); // we create a instance of the class map and initiliaze it with 9 rooms.
+	m.loadRoom(5, &bob); // call the look function on our current room.
+	gameState(m, bob);
+}
+
 int main() {
 	int number = 0;
 	//cout << "hello World" << endl; // cout refers to write text to cmd. << refers to the output flow (<< = out, >> = in) "" anything inside quotation marks refers to a string or text like your reading. endl means to end the line and the next output should be put on the next line.
 	
 	cout << "welcome to midgard";
 	cout << "please pick an option" << endl;
-
+	character bob;
 	// switch statement inside a do while loop.
 	do {
 		// menu options
 		cout << "1. Start a new game" << endl;
-		cout << "menu options 2" << endl;
-		cout << "menu options 3" << endl;
+		cout << "load saved game." << endl;
+		cout << "3. Quit" << endl;
 		cout << "to quit please press 0" << endl;
 		cin >> number;
 			// Train of thought: needs an input to change out of munu options 1.
@@ -113,11 +121,13 @@ int main() {
 		case 1:
 			startGame();
 			break;
-		case 2: cout << "you picked continue but it doesnt exist yet" << endl;
+		case 2:
+			bob = load();
+			startGame(bob);
 			break;
-		case 3: cout << "you picked Quit but it doesn't exist yet" << endl;
-			break;
-			
+		case 3: cout << "Hope you enjoyed the game!" << endl;
+			number = 0;
+			break;	
 		}
 
 	} while (number != 0);

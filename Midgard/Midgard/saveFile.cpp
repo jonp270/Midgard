@@ -1,6 +1,7 @@
 #include "saveFile.h"
 #include "character.h"
 #include <fstream>
+#include <iostream>
 
 
 void save(character bob) {
@@ -8,6 +9,7 @@ void save(character bob) {
 	charFile.open("character.midgardsave");
 	if (charFile.is_open())
 	{
+		charFile << bob.job << std::endl;
 		charFile << bob.name << std::endl;
 		charFile << bob.hp << std::endl;
 		charFile << bob.mp << std::endl;
@@ -19,21 +21,43 @@ void save(character bob) {
 		charFile << bob.res << std::endl;
 		charFile << bob.position << std::endl;
 		charFile.close();
+		std::cout << "savefile saved" << std::endl;
 	}
 }
 
 
-void load(character bob) {
+character load() {
 
-
+	character bob;
 	std::string line;
 	std::ifstream charFile;
 	charFile.open("character.midgardsave");
 	if (charFile.is_open())
 	{
-		charFile >> bob.name;
-		charFile >> bob.str;
-		charFile >> bob.hp;
+		std::string::size_type sz;
+		std::getline(charFile, line);
+		bob.job = std::stoi(line, &sz);
+		std::getline(charFile, line);
+		bob.name = line;
+		std::getline(charFile, line);
+		bob.hp = std::stoi(line, &sz);
+		std::getline(charFile, line);
+		bob.mp = std::stoi(line, &sz);
+		std::getline(charFile, line);
+		bob.str = std::stoi(line, &sz);
+		std::getline(charFile, line);
+		bob.dex = std::stoi(line, &sz);
+		std::getline(charFile, line);
+		bob.intelligence = std::stoi(line, &sz);
+		std::getline(charFile, line);
+		bob.wis = std::stoi(line, &sz);
+		std::getline(charFile, line);
+		bob.def = std::stoi(line, &sz);
+		std::getline(charFile, line);
+		bob.res = std::stoi(line, &sz);
+		std::getline(charFile, line);
+		bob.position = std::stoi(line, &sz);
 	}
 	charFile.close();
+	return bob;
 }
